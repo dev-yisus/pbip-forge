@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pbip-forge"
+version = "0.1.0"
+authors = [
+  { name="Jesus Serrano Mori (dev-yisus)", email="dev-yisus@users.noreply.github.com" },
+]
+
+description = "Reverse-engineered Power BI Developer Mode (.pbip) generation engine for developers and AI agents"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Database",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+dependencies = [
+    "pandas>=2.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dev-yisus/pbip-forge"
+"Bug Tracker" = "https://github.com/dev-yisus/pbip-forge/issues"
+
+
+[project.scripts]
+pbip-forge = "pbip_forge.cli:main"
